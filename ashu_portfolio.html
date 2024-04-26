@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="ashu_portfolio.css">
+    <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!------------Header Section----------->
+    <div id="header">
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#header" onclick="closeNav()"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#about" onclick="closeNav()"><i class="fa-solid fa-address-card"></i>About</a>
+            <a href="#" onclick="closeNav()" ><i class="fa-solid fa-diagram-project"></i>Projects</a>
+            <a href="#contacts" onclick="closeNav()"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </div>
+            <span onclick="openNav()"></span>
+            <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776; </span>
+            
+            <img src="images/Ashu_photo_black.jpg" alt="ashu photo"class="header_image">
+            
+            <div class="header_text" >
+                <h3>Hello! I'm</h3>
+                <h1>Ashu Surana</h1>
+                <p>Software Engineer/Python Developer.</p>
+            </div>
+            <div class="header_btn">
+                <button class="btn1"><i class="fa-solid fa-download"></i>Download Resume</button>
+            </div>
+    </div>
+    <!------------About Section----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col1">
+                    <img src="images/ashu_pic2.JPG" alt="my_photo" class="about_image">
+
+                </div>
+                <div class="about_col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about_text">FullStack Python Developer with strong proficiency in SQL, JavaScript and Django. I have successfully completed SQL Nanodegree from Udacity and have taken courses in relational databases during my Bachelors/Masters. Prior teaching
+                        experience makes me a natural leader, observing and understanding team dynamics and clear
+                        articulation. Constantly updating personal and professional technical skills with complementary collegiate courses and online bootcamps. Reliable and responsible team player. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links "onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Programing Languages</span><br>Python,C,C++</li>
+                            <li><span>DataBase</span><br>MySQL,Postgres,MongoDB</li>
+                            <li><span>Fornt end technologies</span><br>HTML,CSS,JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Post Graduate Diploma</span><br>System Developer Python & IT Security</li>
+                            <li><span>Masters in Technology/</span><br>Computer Science</li>
+                            <li><span>Bachelor of Engineering/</span><br>Computer Science & Engg.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Programing Languages</span><br>Python,C,C++</li>
+                            <li><span>DataBase</span><br>MySQL,Postgres,MongoDB</li>
+                            <li><span>Fornt end technologies</span><br>HTML,CSS,JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!------------------ Contact  Section------------------>
+     <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> surana.ashu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-git"></i></a>
+                        
+                    </div>
+                    <a href="images/my_cv.docx.pdf" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <label>Lets get in touch</label>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <textarea name="mesage"rows="6" placeholder="Message"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright @2024  Ashu Surana </p>
+    </div>
+    
+</body>
+</html>
